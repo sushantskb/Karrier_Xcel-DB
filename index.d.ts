@@ -1,1 +1,8 @@
 export function connectDB(): Promise<void>;
+import { Model } from "mongoose";
+import {IUser} from "./schemas/user.schema";
+import {IKyc} from "./schemas/kyc.schema";
+import {IOtp} from "./schemas/otp.schema";
+export const User: Model<IUser>;
+export const Kyc: Model<IKyc>;
+export const Otp: Model<IOtp>;
