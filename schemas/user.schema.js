@@ -52,12 +52,14 @@ const userSchema = new mongoose.Schema(
         default: 0,
       },
     },
-    enrolledPackages: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Package",
-      },
-    ],
+    investment: {
+      type: Number,
+      default: 0,
+    },
+    enrolledPackages: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Package",
+    },
     associates: [
       {
         type: mongoose.Schema.Types.ObjectId,
