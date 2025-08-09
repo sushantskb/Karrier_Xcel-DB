@@ -52,10 +52,10 @@ const userSchema = new mongoose.Schema(
         default: 0,
       },
     },
-    enrolledCourses: [
+    enrolledPackages: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Course",
+        ref: "Package",
       },
     ],
     associates: [
