@@ -24,6 +24,12 @@ const packageSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  enrolledUsers: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
+  ],
 });
 
 const Package = mongoose.model("Package", packageSchema);
