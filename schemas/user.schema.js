@@ -86,6 +86,10 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    isRegisterd: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
