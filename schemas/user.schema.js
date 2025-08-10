@@ -56,6 +56,10 @@ const userSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
+    totalEarnings: {
+      type: Number,
+      default: 0,
+    },
     enrolledPackages: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Package",
