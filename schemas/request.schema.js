@@ -10,6 +10,9 @@ const requestSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "Package",
     },
+    screenShot: {
+      type: String,
+    },
     status: {
       type: String,
       enum: ["pending", "approved", "rejected"],
