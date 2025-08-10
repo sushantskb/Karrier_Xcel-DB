@@ -60,6 +60,10 @@ const userSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "Package",
     },
+    upline: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
     associates: [
       {
         type: mongoose.Schema.Types.ObjectId,
