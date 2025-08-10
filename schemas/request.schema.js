@@ -13,6 +13,9 @@ const requestSchema = new mongoose.Schema(
     screenShot: {
       type: String,
     },
+    sponsorCode: {
+      type: String,
+    },
     status: {
       type: String,
       enum: ["pending", "approved", "rejected"],
