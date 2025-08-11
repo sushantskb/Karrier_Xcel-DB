@@ -43,19 +43,26 @@ const userSchema = new mongoose.Schema(
       type: String,
     },
     wallet: {
-      passiveIncome: {
-        type: Number,
-        default: 0,
-      },
       activeIncome: {
-        type: Number,
-        default: 0,
+        total: { type: Number, default: 0 },
+        today: { type: Number, default: 0 },
+        thisWeek: { type: Number, default: 0 },
+        thisMonth: { type: Number, default: 0 },
+        lastUpdated: { type: Date, default: Date.now },
+      },
+      passiveIncome: {
+        total: { type: Number, default: 0 },
+        today: { type: Number, default: 0 },
+        thisWeek: { type: Number, default: 0 },
+        thisMonth: { type: Number, default: 0 },
+        lastUpdated: { type: Date, default: Date.now },
       },
     },
     investment: {
       type: Number,
       default: 0,
     },
+
     totalEarnings: {
       type: Number,
       default: 0,
