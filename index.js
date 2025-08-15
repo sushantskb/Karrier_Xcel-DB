@@ -6,7 +6,8 @@ import Kyc from "./schemas/kyc.schema.js";
 import Otp from "./schemas/otp.schema.js";
 import Package from "./schemas/package.schema.js";
 import Request from "./schemas/request.schema.js";
+import WalletRequest from "./schemas/walletRequests.js";
 import connectDB from "./db.js";
 
 connectDB();
-export { connectDB, User, Kyc, Otp, Package, Request };
+export { connectDB, User, Kyc, Otp, Package, Request, WalletRequest };
