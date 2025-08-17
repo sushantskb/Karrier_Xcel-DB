@@ -17,10 +17,6 @@ const kycSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  upiId: {
-    type: String,
-    required: true,
-  },
   identificationProof: {
     type: String,
     required: true,
@@ -28,6 +24,10 @@ const kycSchema = new mongoose.Schema({
   adharNumber: {
     type: String,
     required: true,
+  },
+  onceEdited: {
+    type: Boolean,
+    default: false,
   },
 });
 
