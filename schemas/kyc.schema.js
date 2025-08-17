@@ -25,10 +25,6 @@ const kycSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  onceEdited: {
-    type: Boolean,
-    default: false,
-  },
 });
 
 const Kyc = mongoose.model("Kyc", kycSchema);
