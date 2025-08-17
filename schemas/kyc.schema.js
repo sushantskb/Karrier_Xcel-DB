@@ -25,6 +25,11 @@ const kycSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  isVerified: {
+    type: String,
+    enum: ["pending", "approved", "rejected"],
+    default: "pending",
+  },
 });
 
 const Kyc = mongoose.model("Kyc", kycSchema);
