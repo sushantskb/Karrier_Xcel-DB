@@ -21,7 +21,7 @@ const kycSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  adharNumber: {
+  adharCard: {
     type: String,
     required: true,
   },
