@@ -66,6 +66,11 @@ const userSchema = new mongoose.Schema(
     totalEarnings: {
       type: Number,
       default: 0,
+      lastUpdated: { type: Date, default: Date.now },
+    },
+    totalEarningsTrack: {
+      type: Date,
+      default: Date.now,
     },
     enrolledPackages: {
       type: mongoose.Schema.Types.ObjectId,
