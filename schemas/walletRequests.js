@@ -14,6 +14,10 @@ const walletRequestSchema = new mongoose.Schema({
     enum: ["pending", "approved", "rejected"],
     default: "pending",
   },
+  isPaid: {
+    type: Boolean,
+    default: false
+  }
 });
 
 const WalletRequest = mongoose.model("WalletRequest", walletRequestSchema);
