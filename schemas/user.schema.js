@@ -58,10 +58,14 @@ const userSchema = new mongoose.Schema(
         lastUpdated: { type: Date, default: Date.now },
       },
     },
-    deductions: {
-      activeIncome: { type: Number, default: 0 },
-      passiveIncome: { type: Number, default: 0 },
-    },
+    deductionHistory: [
+      {
+        amount: { type: Number, required: true },
+        source: { type: String, enum: ["activeIncome", "passiveIncome"], required: true },
+        date: { type: Date, default: Date.now },
+        reason: { type: String },
+      }
+    ],
     investment: {
       type: Number,
       default: 0,
