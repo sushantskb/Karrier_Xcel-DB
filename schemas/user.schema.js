@@ -58,6 +58,10 @@ const userSchema = new mongoose.Schema(
         lastUpdated: { type: Date, default: Date.now },
       },
     },
+    deductions: {
+      activeIncome: { type: Number, default: 0 },
+      passiveIncome: { type: Number, default: 0 },
+    },
     investment: {
       type: Number,
       default: 0,
