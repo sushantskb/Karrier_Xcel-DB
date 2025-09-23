@@ -31,6 +31,12 @@ const packageSchema = new mongoose.Schema(
         ref: "User",
       },
     ],
+    courses: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Course",
+      },
+    ],
   },
   {
     timestamps: true,
