@@ -21,6 +21,9 @@ const courseSchema = new mongoose.Schema(
       trim: true,
       // Example: 'PLabc123xyz' — YouTube playlist ID
     },
+    thumbnail: {
+      type: String,
+    },
     completedBy: [
       {
         type: mongoose.Schema.Types.ObjectId,
