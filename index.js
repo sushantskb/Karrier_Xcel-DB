@@ -7,7 +7,19 @@ import Otp from "./schemas/otp.schema.js";
 import Package from "./schemas/package.schema.js";
 import Request from "./schemas/request.schema.js";
 import WalletRequest from "./schemas/walletRequests.js";
+import Course from "./schemas/course.schema.js";
+import Ads from "./schemas/ads.schema.js";
 import connectDB from "./db.js";
 
 connectDB();
-export { connectDB, User, Kyc, Otp, Package, Request, WalletRequest };
+export {
+  connectDB,
+  User,
+  Kyc,
+  Otp,
+  Package,
+  Request,
+  WalletRequest,
+  Course,
+  Ads,
+};
