@@ -3,12 +3,10 @@ import mongoose from "mongoose";
 const adsSchema = new mongoose.Schema(
   {
     adImg: {
-      type: String,
-      required: true,
+      type: String
     },
     announcemt: {
-      type: String,
-      required: true,
+      type: String
     },
   },
   {
