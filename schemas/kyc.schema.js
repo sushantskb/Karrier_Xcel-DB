@@ -17,7 +17,11 @@ const kycSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  identificationProof: {
+  adhaarCard: {
+    type: String,
+    required: true,
+  },
+  bankPassBook: {
     type: String,
     required: true,
   },
