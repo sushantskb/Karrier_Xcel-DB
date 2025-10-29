@@ -10,6 +10,10 @@ const walletRequestSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+    amountToShow: {
+      type: Number,
+      required: true
+    },
     status: {
       type: String,
       enum: ["pending", "approved", "rejected"],
