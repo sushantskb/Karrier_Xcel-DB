@@ -10,6 +10,7 @@ import WalletRequest from "./schemas/walletRequests.js";
 import Course from "./schemas/course.schema.js";
 import Ads from "./schemas/ads.schema.js";
 import Ticket from "./schemas/ticket.Schema.js";
+import Transaction from "./schemas/transactions.schema.js";
 import connectDB from "./db.js";
 
 connectDB();
@@ -23,5 +24,6 @@ export {
   WalletRequest,
   Course,
   Ads,
-  Ticket
+  Ticket,
+  Transaction,
 };
