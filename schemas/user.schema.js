@@ -7,11 +7,13 @@ const userSchema = new mongoose.Schema(
     },
     name: {
       type: String,
+      trim: true,
     },
     email: {
       type: String,
       required: true,
       unique: true,
+      trim: true,
     },
     password: {
       type: String,
@@ -61,10 +63,14 @@ const userSchema = new mongoose.Schema(
     deductionHistory: [
       {
         amount: { type: Number, required: true },
-        source: { type: String, enum: ["activeIncome", "passiveIncome"], required: true },
+        source: {
+          type: String,
+          enum: ["activeIncome", "passiveIncome"],
+          required: true,
+        },
         date: { type: Date, default: Date.now },
         reason: { type: String },
-      }
+      },
     ],
     investment: {
       type: Number,
