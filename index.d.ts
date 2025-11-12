@@ -19,4 +19,4 @@ export const WalletRequest: Model<IWalletRequest>;
 export const Course: Model<ICourse>;
 export const Ads: Model<IAds>;
 export const Ticket: Model<ITicket>;
-export const Transactions: Model<ITransaction>;
+export const Transaction: Model<ITransaction>;
