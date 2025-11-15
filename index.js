@@ -11,6 +11,7 @@ import Course from "./schemas/course.schema.js";
 import Ads from "./schemas/ads.schema.js";
 import Ticket from "./schemas/ticket.Schema.js";
 import Transaction from "./schemas/transactions.schema.js";
+import Target from "./schemas/target.Schema.js";
 import connectDB from "./db.js";
 
 connectDB();
@@ -26,4 +27,5 @@ export {
   Ads,
   Ticket,
   Transaction,
+  Target,
 };
