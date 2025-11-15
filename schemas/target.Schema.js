@@ -10,6 +10,18 @@ const targetSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+    acheivedAmount: [
+      {
+        user: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "User",
+        },
+        amount: {
+          type: Number,
+          default: 0,
+        },
+      },
+    ],
     acheivedBy: [
       {
         user: {
