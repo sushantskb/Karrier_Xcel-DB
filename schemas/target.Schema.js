@@ -6,6 +6,11 @@ const targetSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    incomeType: {
+      type: String,
+      required: true,
+      enum: ["active", "passive"],
+    },
     targetAmount: {
       type: Number,
       required: true,
