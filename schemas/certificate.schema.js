@@ -11,10 +11,15 @@ const certificateSchema = new mongoose.Schema({
     ref: "Course",
     required: true,
   },
+  certificateURL: {
+    type: String,
+  },
   certificateContent: {
     type: String,
     required: true,
   },
+}, {
+  timestamps: true
 });
 
 const Certificate = mongoose.model("Certificate", certificateSchema);
