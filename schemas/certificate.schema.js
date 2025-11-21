@@ -13,9 +13,6 @@ const certificateSchema = new mongoose.Schema({
   },
   certificateURL: {
     type: String,
-  },
-  certificateContent: {
-    type: String,
     required: true,
   },
 }, {
