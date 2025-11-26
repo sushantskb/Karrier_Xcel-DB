@@ -57,6 +57,10 @@ const targetSchema = new mongoose.Schema(
       required: true,
       enum: ["weekly", "monthly", "yearly"],
     },
+    isExpired: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
