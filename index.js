@@ -13,6 +13,7 @@ import Ticket from "./schemas/ticket.Schema.js";
 import Transaction from "./schemas/transactions.schema.js";
 import Certificate from "./schemas/certificate.schema.js";
 import Target from "./schemas/target.Schema.js";
+import Upgrade from "./schemas/upgrades.schema.js";
 import connectDB from "./db.js";
 
 connectDB();
@@ -29,5 +30,6 @@ export {
   Ticket,
   Transaction,
   Target,
-  Certificate
+  Certificate,
+  Upgrade,
 };
