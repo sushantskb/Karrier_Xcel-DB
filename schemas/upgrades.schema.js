@@ -24,5 +24,5 @@ const upgradeSchema = new mongoose.Schema(
   }
 );
 
-const Upgrade = mongoose.model("Request", upgradeSchema);
+const Upgrade = mongoose.model("Upgrade", upgradeSchema);
 export default Upgrade;
